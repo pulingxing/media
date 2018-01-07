@@ -1,0 +1,236 @@
+@charset "utf-8";
+/*
+功能：logo,适配
+author：pulinxing
+*/
+body,html{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: url("../img/logo.jpg") no-repeat;
+	background-size: cover;
+}
+
+
+h1{
+	text-align: center;
+	font-size: 15px;
+	letter-spacing: 5px;
+	color: #ffffff;
+	text-shadow: 2px 2px 3px #090000;
+	margin-bottom: 40px;
+}
+
+input{
+	width: 180px;
+	height: 35px;
+	background: rgba(0,0,0,0);
+	border: none;
+	outline: none;
+
+}
+input::-webkit-input-placeholder{
+    color: #eee;
+    opacity:1;
+    text-align: center;
+}
+/*input焦点*/
+input:focus + i{
+	color: #08E639;
+	transform: scale(1.2);  
+	transition: all .15s linear;
+}
+/*焦点*/
+/*input[type=text]:focus, input[type=password]:focus {
+    border: 2px solid #f00;
+}*/
+
+.int1,.int2{
+	height: 45px;
+	border-radius: 20px;
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 45px;
+	width: 300px;
+	margin: 20px auto;
+	background: rgba(0,0,0,0.1);
+	color: #ffffff;
+	position: relative;
+}
+
+ .logo .int1>i,.logo .int2>i{
+	position: absolute;
+	left: 15px;
+	top:15px;
+	font-size: 20px;
+}
+
+button{
+	height: 45px;
+	border-radius: 20px;
+	display: block;
+	border: 1px solid #fff;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 300px;
+	background: rgba(0,0,0,0.1);
+}
+
+.btn3{
+	background-color: #1DA043;
+	color: #ffffff;
+	text-shadow: 0 0 2px #0B0000;
+}
+
+.btn4{
+	background-color: #1DA043;
+	color: #ffffff;
+	text-shadow: 0 0 2px #0B0000;
+}
+
+.logo{
+	box-sizing: border-box;
+	padding-top: 100px;
+	height: 100%;	
+}
+
+.help{
+		text-align: center;
+		margin-top: 30px;
+}
+
+.help a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	text-shadow: 0 0 2px #100303;
+}
+
+.help span{
+	color: #fff;
+}
+
+.others{
+	width: 100%;
+	height: 20px;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 80px;
+	font-size: 20px;
+	color: #fff;
+}
+
+.mode{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.mode>span{
+	color:#ffffff;
+	display: inline-block;
+	margin-left:10px;
+	text-shadow: 0 0 2px #0B0000;
+}
+/*适配手机*/
+@media (min-width:320px) and (max-width: 414px) {
+	.int1,.int2{
+	height: 45px;
+	border-radius: 20px;
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 45px;
+	width: 80%;
+	margin: 20px auto;
+	background: rgba(0,0,0,0.1);
+	color: #ffffff;
+	position: relative;
+}
+
+ .logo .int1>i,.logo .int2>i{
+	position: absolute;
+	left: 15px;
+	top:15px;
+	font-size: 20px;
+}
+
+button{
+	height: 45px;
+	border-radius: 20px;
+	display: block;
+	border: 1px solid #fff;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 80%;
+	background: rgba(0,0,0,0.1);
+}
+.mode{
+	text-align: center;
+	margin-top: 40px;
+}
+.logo{
+	box-sizing: border-box;
+	
+	height: 100%;	
+}
+
+}
+/*适配iPad*/
+@media (min-width: 768px)  and (max-width:1024px) {
+.int1,.int2{
+	height: 45px;
+	border-radius: 20px;
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 35px;
+	margin: 20px auto;
+	width: 80%;
+	background: rgba(0,0,0,0.1);
+	color: #ffffff;
+	position: relative;
+}
+
+button{
+	height: 45px;
+	border-radius: 20px;
+	display: block;
+	border: 1px solid #fff;
+	margin: 20px auto;
+	width: 80%;
+	background: rgba(0,0,0,0.1);
+}
+
+}
+/*Q&A宽度从414到640会导致i的位置因为绝对定位出现的适配问题*/
+
+/*@media screen (min-width: 414px) and (max-width: 640px) {
+	.logo .int1>i,.logo .int2>i{
+	position: absolute;
+	left: 60px;
+	top:16px;
+}
+}*/
+/*当宽度大于640px的时候*/
+/*@media screen and (min-width: 640px)  {
+	body{
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+		background: url(../img/33.jpg) no-repeat;
+		background-size: cover;
+	}
+
+}
+
+@media screen and (min-width: 1000px)  {
+	body{
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+		background: url(../img/water.jpg) no-repeat;
+		background-size: cover;
+	}
+
+}
+*/
+
+
